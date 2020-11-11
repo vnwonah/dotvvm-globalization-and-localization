@@ -40,6 +40,10 @@ namespace DotVVMGL
             {
                 Location = new UrlResourceLocation("~/styles.css")
             });
+            config.Resources.Register("bootstrap", new StylesheetResource()
+            {
+                Location = new UrlResourceLocation("~/lib/bootstrap/dist/css/bootstrap.css")
+            });
         }
 
 		public void ConfigureServices(IDotvvmServiceCollection options)
